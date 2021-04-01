@@ -11,5 +11,9 @@
     "express": "^4.17.1",
     "socket.io": "^2.4.0",
     "username-generator": "^1.1.0"
+  },
+  "scripts": {
+    "setup": "concurrently \"yarn\" \"cd client && yarn\"",
+    "boot": "concurrently \"yarn start\" \"cd client && yarn start\""
   }
 }
